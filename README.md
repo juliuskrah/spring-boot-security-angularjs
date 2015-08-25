@@ -1,5 +1,5 @@
-# angular_spring
-About
+# AngularJs and Spring
+##About
 This project focuses on the best ways to implement
 an [AngularJs](https://angularjs.org/) application into a [Spring](http://projects.spring.io/spring-framework/) [Security](http://projects.spring.io/spring-security/)
 application.
