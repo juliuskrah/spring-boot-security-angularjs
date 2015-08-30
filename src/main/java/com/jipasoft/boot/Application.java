@@ -1,4 +1,4 @@
-package demo;
+package com.jipasoft.boot;
 
 import java.security.Principal;
 import java.util.HashMap;
@@ -15,19 +15,21 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.web.csrf.CsrfFilter;
 import org.springframework.security.web.csrf.CsrfTokenRepository;
 import org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository;
+import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class DemoApplication {
+@EnableRedisHttpSession
+public class Application {
 
 	@RequestMapping("/user")
 	public Principal user(Principal user) {
 		return user;
 	}
 
-	@RequestMapping("/resource")
+	@RequestMapping("/")
 	public Map<String, Object> home() {
 		Map<String, Object> model = new HashMap<>();
 		model.put("id", UUID.randomUUID().toString());
@@ -37,7 +39,7 @@ public class DemoApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 	@Configuration

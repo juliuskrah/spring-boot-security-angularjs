@@ -77,7 +77,7 @@ angular
 					}
 
 				}).controller('home', function($scope, $http) {
-			$http.get('/resource/').success(function(data) {
+			$http.get('http://localhost:9000/').success(function(data) {
 				$scope.greeting = data;
 			})
 		});
