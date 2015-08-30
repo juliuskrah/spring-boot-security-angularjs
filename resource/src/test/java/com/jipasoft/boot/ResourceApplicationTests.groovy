@@ -1,4 +1,4 @@
-package demo
+package com.jipasoft.boot
 
 import org.junit.Test
 import org.junit.runner.RunWith

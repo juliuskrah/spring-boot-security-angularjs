@@ -1,4 +1,4 @@
-package demo;
+package com.jipasoft.boot;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,7 +11,7 @@ import com.jipasoft.boot.Application;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
 @WebAppConfiguration
-public class DemoApplicationTests {
+public class ApplicationTests {
 
 	@Test
 	public void contextLoads() {
