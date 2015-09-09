@@ -13,8 +13,9 @@ when running the application, use `user` as username and copy the password genar
 
 open a second terminal for the resource server
 - run `mvn spring-boot:run` to run on `port 9000`
-- launch the application in a browser at `[http://localhost:8080/](http://localhost:8080/)`
+- launch the application in a browser at [http://localhost:8080/](http://localhost:8080/)
 
 ###Features
 - CORS
-- Add support for resource server on port 9000
+- Application resource runs on port to emulate a distributed system
+- Application runs a [Redis](http://redis.io/) server instance to share authentication information between servers
