@@ -7,7 +7,20 @@ It focuses on concepts such as Cross Site Request Fogery ([CSRF](https://www.owa
 attacks, [Cookies](https://en.wikipedia.org/wiki/HTTP_cookie), [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) as well as [Basic](https://en.wikipedia.org/wiki/Basic_access_authentication) and [Form](https://en.wikipedia.org/wiki/Form-based_authentication) [Authentication](https://en.wikipedia.org/wiki/Authentication). 
 The use of [RESTful](http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069) services using [@RestController](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/bind/annotation/RestController.html) is also present
 
-The project consist of two subprojects: [api-gateway](https://github.com/jipaman/spring-boot-security-angularjs/tree/master/api_gateway) and [resource-server](https://github.com/jipaman/spring-boot-security-angularjs/tree/master/resource_server)
+This project has two subprojects [resource](https://github.com/jipaman/spring-boot-security-angularjs/tree/master/resource_server/resource) and [ui](https://github.com/jipaman/spring-boot-security-angularjs/tree/master/resource_server/ui)
+##Prerequisites
+- Java 8+
+- Maven 3.3.3+
+- Redis 2.8+
+
+##Running the application
+Open a terminal and run `mvn spring-boot:run` to run on `port 8080` for the ui server
+
+when running the application, use `user` as username and copy the password genarated by the application as password
+
+open a second terminal for the resource server
+- run `mvn spring-boot:run` to run on `port 9000`
+- launch the application in a browser at [http://localhost:8080/](http://localhost:8080/)
 
 ###Features
 - CORS
