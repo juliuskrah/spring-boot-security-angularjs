@@ -1,5 +1,5 @@
-# AngularJs and Spring
-##About
+# Spring-Security and AngularJS
+## About
 This project focuses on the best ways to implement
 an [AngularJs](https://angularjs.org/) application into a [Spring](http://projects.spring.io/spring-framework/) [Security](http://projects.spring.io/spring-security/)
 application.
@@ -9,7 +9,7 @@ The use of [RESTful](http://www.drdobbs.com/web-development/restful-web-services
 
 The project consist of two subprojects: [api-gateway](https://github.com/jipaman/spring-boot-security-angularjs/tree/master/api_gateway) and [resource-server](https://github.com/jipaman/spring-boot-security-angularjs/tree/master/resource_server)
 
-###Features
+### Features
 - CORS
 - Application resource runs on port to emulate a distributed system
 - Application runs a [Redis](http://redis.io/) server instance to share authentication information between servers
