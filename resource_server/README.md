@@ -1,4 +1,6 @@
 # AngularJs and Spring
+[![Build Status](https://travis-ci.org/juliuskrah/spring-boot-security-angularjs.svg?branch=master)](https://travis-ci.org/juliuskrah/spring-boot-security-angularjs)
+
 ##About
 This project focuses on the best ways to implement
 an [AngularJs](https://angularjs.org/) application into a [Spring](http://projects.spring.io/spring-framework/) [Security](http://projects.spring.io/spring-security/)
@@ -7,7 +9,7 @@ It focuses on concepts such as Cross Site Request Fogery ([CSRF](https://www.owa
 attacks, [Cookies](https://en.wikipedia.org/wiki/HTTP_cookie), [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) as well as [Basic](https://en.wikipedia.org/wiki/Basic_access_authentication) and [Form](https://en.wikipedia.org/wiki/Form-based_authentication) [Authentication](https://en.wikipedia.org/wiki/Authentication). 
 The use of [RESTful](http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069) services using [@RestController](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/bind/annotation/RestController.html) is also present
 
-This project has two subprojects [resource](https://github.com/jipaman/spring-boot-security-angularjs/tree/master/resource_server/resource) and [ui](https://github.com/jipaman/spring-boot-security-angularjs/tree/master/resource_server/ui)
+This project has two subprojects [resource](https://github.com/juliuskrah/spring-boot-security-angularjs/tree/master/resource_server/resource) and [ui](https://github.com/juliuskrah/spring-boot-security-angularjs/tree/master/resource_server/ui)
 ##Prerequisites
 - Java 8+
 - Maven 3.3.3+
