@@ -2,26 +2,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>com.example</groupId>
-	<artifactId>spring-angular</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>ui-server</artifactId>
 	<packaging>jar</packaging>
 
-	<name>spring-security-angularjs</name>
-	<description>Demo project for Spring Boot</description>
+	<name>ui-server</name>
+	<description>Ui server for Spring Boot with AngularJs</description>
 
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.4.0.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<groupId>com.juliuskrah.angular</groupId>
+		<artifactId>spring-angular</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>..</relativePath>
 	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
@@ -52,7 +47,7 @@
 				<artifactId>maven-resources-plugin</artifactId>
 				<executions>
 					<execution>
-						<!-- Serves *only* to filter the wro.xml so it can get an absolute 
+						<!-- Serves *only* to filter the wro.xml so it can get an absolute
 							path for the project -->
 						<id>copy-resources</id>
 						<phase>validate</phase>
